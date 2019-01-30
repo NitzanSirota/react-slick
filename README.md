@@ -1,3 +1,8 @@
+# :warning: :warning: :warning: 
+# This is a temporarily fork to be used by ecomm (product-page) until [PR](https://github.com/akiran/react-slick/pull/1490) is merged to react-slick
+# :warning: :warning: :warning: 
+
+
 ### react-slick
 
 [![Backers on Open Collective](https://opencollective.com/react-slick/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/react-slick/sponsors/badge.svg)](#sponsors) [![Join the chat at https://gitter.im/akiran/react-slick](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/akiran/react-slick?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
