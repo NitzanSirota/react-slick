@@ -2415,7 +2415,7 @@ var checkSpecKeys = function checkSpecKeys(spec, keysArray) {
 var getTrackCSS = function getTrackCSS(spec) {
   checkSpecKeys(spec, ["left", "variableWidth", "slideCount", "slidesToShow", "slideWidth"]);
   var trackWidth, trackHeight;
-  var trackChildren = spec.slideCount + 2 * spec.slidesToShow;
+  var trackChildren = 2 + spec.slidesToShow;
 
   if (!spec.vertical) {
     trackWidth = getTotalSlides(spec) * spec.slideWidth;
