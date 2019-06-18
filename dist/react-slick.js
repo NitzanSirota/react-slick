@@ -136,11 +136,11 @@ function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) ===
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -164,28 +164,28 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Slider).call(this, props));
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "innerSliderRefHandler", function (ref) {
+    _defineProperty(_assertThisInitialized(_this), "innerSliderRefHandler", function (ref) {
       return _this.innerSlider = ref;
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "slickPrev", function () {
+    _defineProperty(_assertThisInitialized(_this), "slickPrev", function () {
       return _this.innerSlider.slickPrev();
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "slickNext", function () {
+    _defineProperty(_assertThisInitialized(_this), "slickNext", function () {
       return _this.innerSlider.slickNext();
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "slickGoTo", function (slide) {
+    _defineProperty(_assertThisInitialized(_this), "slickGoTo", function (slide) {
       var dontAnimate = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
       return _this.innerSlider.slickGoTo(slide, dontAnimate);
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "slickPause", function () {
+    _defineProperty(_assertThisInitialized(_this), "slickPause", function () {
       return _this.innerSlider.pause("paused");
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "slickPlay", function () {
+    _defineProperty(_assertThisInitialized(_this), "slickPlay", function () {
       return _this.innerSlider.autoPlay("play");
     });
 
@@ -434,11 +434,11 @@ function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) ===
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -464,15 +464,15 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(InnerSlider).call(this, props));
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "listRefHandler", function (ref) {
+    _defineProperty(_assertThisInitialized(_this), "listRefHandler", function (ref) {
       return _this.list = ref;
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "trackRefHandler", function (ref) {
+    _defineProperty(_assertThisInitialized(_this), "trackRefHandler", function (ref) {
       return _this.track = ref;
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "adaptHeight", function () {
+    _defineProperty(_assertThisInitialized(_this), "adaptHeight", function () {
       if (_this.props.adaptiveHeight && _this.list) {
         var elem = _this.list.querySelector("[data-index=\"".concat(_this.state.currentSlide, "\"]"));
 
@@ -480,7 +480,7 @@ function (_React$Component) {
       }
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "componentWillMount", function () {
+    _defineProperty(_assertThisInitialized(_this), "componentWillMount", function () {
       _this.ssrInit();
 
       _this.props.onInit && _this.props.onInit();
@@ -502,7 +502,7 @@ function (_React$Component) {
       }
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "componentDidMount", function () {
+    _defineProperty(_assertThisInitialized(_this), "componentDidMount", function () {
       var spec = _objectSpread({
         listRef: _this.list,
         trackRef: _this.track
@@ -551,7 +551,7 @@ function (_React$Component) {
       }
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "componentWillUnmount", function () {
+    _defineProperty(_assertThisInitialized(_this), "componentWillUnmount", function () {
       if (_this.animationEndCallback) {
         clearTimeout(_this.animationEndCallback);
       }
@@ -579,7 +579,7 @@ function (_React$Component) {
       }
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "componentWillReceiveProps", function (nextProps) {
+    _defineProperty(_assertThisInitialized(_this), "componentWillReceiveProps", function (nextProps) {
       var spec = _objectSpread({
         listRef: _this.list,
         trackRef: _this.track
@@ -587,10 +587,8 @@ function (_React$Component) {
 
       var setTrackStyle = false;
 
-      var _arr = Object.keys(_this.props);
-
-      for (var _i = 0; _i < _arr.length; _i++) {
-        var key = _arr[_i];
+      for (var _i = 0, _Object$keys = Object.keys(_this.props); _i < _Object$keys.length; _i++) {
+        var key = _Object$keys[_i];
 
         if (!nextProps.hasOwnProperty(key)) {
           setTrackStyle = true;
@@ -624,7 +622,7 @@ function (_React$Component) {
       });
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "componentDidUpdate", function () {
+    _defineProperty(_assertThisInitialized(_this), "componentDidUpdate", function () {
       _this.checkImagesLoad();
 
       _this.props.onReInit && _this.props.onReInit();
@@ -651,7 +649,7 @@ function (_React$Component) {
       _this.adaptHeight();
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onWindowResized", function (setTrackStyle) {
+    _defineProperty(_assertThisInitialized(_this), "onWindowResized", function (setTrackStyle) {
       if (_this.debouncedResize) _this.debouncedResize.cancel();
       _this.debouncedResize = lodash_debounce__WEBPACK_IMPORTED_MODULE_3___default()(function () {
         return _this.resizeWindow(setTrackStyle);
@@ -660,7 +658,7 @@ function (_React$Component) {
       _this.debouncedResize();
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "resizeWindow", function () {
+    _defineProperty(_assertThisInitialized(_this), "resizeWindow", function () {
       var setTrackStyle = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
       if (!react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(_this.track)) return;
 
@@ -682,7 +680,7 @@ function (_React$Component) {
       delete _this.animationEndCallback;
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "updateState", function (spec, setTrackStyle, callback) {
+    _defineProperty(_assertThisInitialized(_this), "updateState", function (spec, setTrackStyle, callback) {
       var updatedState = Object(_utils_innerSliderUtils__WEBPACK_IMPORTED_MODULE_5__["initializedState"])(spec);
       spec = _objectSpread({}, spec, updatedState, {
         slideIndex: updatedState.currentSlide
@@ -702,7 +700,7 @@ function (_React$Component) {
       _this.setState(updatedState, callback);
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "ssrInit", function () {
+    _defineProperty(_assertThisInitialized(_this), "ssrInit", function () {
       if (_this.props.variableWidth) {
         var _trackWidth = 0,
             _trackLeft = 0;
@@ -785,7 +783,7 @@ function (_React$Component) {
       });
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "checkImagesLoad", function () {
+    _defineProperty(_assertThisInitialized(_this), "checkImagesLoad", function () {
       var images = document.querySelectorAll(".slick-slide img");
       var imagesCount = images.length,
           loadedCount = 0;
@@ -826,7 +824,7 @@ function (_React$Component) {
       });
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "progressiveLazyLoad", function () {
+    _defineProperty(_assertThisInitialized(_this), "progressiveLazyLoad", function () {
       var slidesToLoad = [];
 
       var spec = _objectSpread({}, _this.props, _this.state);
@@ -863,7 +861,7 @@ function (_React$Component) {
       }
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "slideHandler", function (index) {
+    _defineProperty(_assertThisInitialized(_this), "slideHandler", function (index) {
       var dontAnimate = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
       var _this$props = _this.props,
           asNavFor = _this$props.asNavFor,
@@ -911,7 +909,7 @@ function (_React$Component) {
       });
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "changeSlide", function (options) {
+    _defineProperty(_assertThisInitialized(_this), "changeSlide", function (options) {
       var dontAnimate = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
 
       var spec = _objectSpread({}, _this.props, _this.state);
@@ -926,7 +924,7 @@ function (_React$Component) {
       }
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "clickHandler", function (e) {
+    _defineProperty(_assertThisInitialized(_this), "clickHandler", function (e) {
       if (_this.clickable === false) {
         e.stopPropagation();
         e.preventDefault();
@@ -935,18 +933,18 @@ function (_React$Component) {
       _this.clickable = true;
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "keyHandler", function (e) {
+    _defineProperty(_assertThisInitialized(_this), "keyHandler", function (e) {
       var dir = Object(_utils_innerSliderUtils__WEBPACK_IMPORTED_MODULE_5__["keyHandler"])(e, _this.props.accessibility, _this.props.rtl);
       dir !== "" && _this.changeSlide({
         message: dir
       });
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "selectHandler", function (options) {
+    _defineProperty(_assertThisInitialized(_this), "selectHandler", function (options) {
       _this.changeSlide(options);
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "disableBodyScroll", function () {
+    _defineProperty(_assertThisInitialized(_this), "disableBodyScroll", function () {
       var preventDefault = function preventDefault(e) {
         e = e || window.event;
         if (e.preventDefault) e.preventDefault();
@@ -956,11 +954,11 @@ function (_React$Component) {
       window.ontouchmove = preventDefault;
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "enableBodyScroll", function () {
+    _defineProperty(_assertThisInitialized(_this), "enableBodyScroll", function () {
       window.ontouchmove = null;
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "swipeStart", function (e) {
+    _defineProperty(_assertThisInitialized(_this), "swipeStart", function (e) {
       if (_this.props.verticalSwiping) {
         _this.disableBodyScroll();
       }
@@ -969,7 +967,7 @@ function (_React$Component) {
       state !== "" && _this.setState(state);
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "swipeMove", function (e) {
+    _defineProperty(_assertThisInitialized(_this), "swipeMove", function (e) {
       var state = Object(_utils_innerSliderUtils__WEBPACK_IMPORTED_MODULE_5__["swipeMove"])(e, _objectSpread({}, _this.props, _this.state, {
         trackRef: _this.track,
         listRef: _this.list,
@@ -984,7 +982,7 @@ function (_React$Component) {
       _this.setState(state);
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "swipeEnd", function (e) {
+    _defineProperty(_assertThisInitialized(_this), "swipeEnd", function (e) {
       var state = Object(_utils_innerSliderUtils__WEBPACK_IMPORTED_MODULE_5__["swipeEnd"])(e, _objectSpread({}, _this.props, _this.state, {
         trackRef: _this.track,
         listRef: _this.list,
@@ -1005,7 +1003,7 @@ function (_React$Component) {
       }
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "slickPrev", function () {
+    _defineProperty(_assertThisInitialized(_this), "slickPrev", function () {
       // this and fellow methods are wrapped in setTimeout
       // to make sure initialize setState has happened before
       // any of such methods are called
@@ -1016,7 +1014,7 @@ function (_React$Component) {
       }, 0));
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "slickNext", function () {
+    _defineProperty(_assertThisInitialized(_this), "slickNext", function () {
       _this.callbackTimers.push(setTimeout(function () {
         return _this.changeSlide({
           message: "next"
@@ -1024,7 +1022,7 @@ function (_React$Component) {
       }, 0));
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "slickGoTo", function (slide) {
+    _defineProperty(_assertThisInitialized(_this), "slickGoTo", function (slide) {
       var dontAnimate = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
       slide = Number(slide);
       if (isNaN(slide)) return "";
@@ -1038,7 +1036,7 @@ function (_React$Component) {
       }, 0));
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "play", function () {
+    _defineProperty(_assertThisInitialized(_this), "play", function () {
       var nextIndex;
 
       if (_this.props.rtl) {
@@ -1054,7 +1052,7 @@ function (_React$Component) {
       _this.slideHandler(nextIndex);
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "autoPlay", function (playType) {
+    _defineProperty(_assertThisInitialized(_this), "autoPlay", function (playType) {
       if (_this.autoplayTimer) {
         clearInterval(_this.autoplayTimer);
       }
@@ -1082,7 +1080,7 @@ function (_React$Component) {
       });
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "pause", function (pauseType) {
+    _defineProperty(_assertThisInitialized(_this), "pause", function (pauseType) {
       if (_this.autoplayTimer) {
         clearInterval(_this.autoplayTimer);
         _this.autoplayTimer = null;
@@ -1110,31 +1108,31 @@ function (_React$Component) {
       }
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onDotsOver", function () {
+    _defineProperty(_assertThisInitialized(_this), "onDotsOver", function () {
       return _this.props.autoplay && _this.pause("hovered");
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onDotsLeave", function () {
+    _defineProperty(_assertThisInitialized(_this), "onDotsLeave", function () {
       return _this.props.autoplay && _this.state.autoplaying === "hovered" && _this.autoPlay("leave");
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onTrackOver", function () {
+    _defineProperty(_assertThisInitialized(_this), "onTrackOver", function () {
       return _this.props.autoplay && _this.pause("hovered");
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onTrackLeave", function () {
+    _defineProperty(_assertThisInitialized(_this), "onTrackLeave", function () {
       return _this.props.autoplay && _this.state.autoplaying === "hovered" && _this.autoPlay("leave");
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onSlideFocus", function () {
+    _defineProperty(_assertThisInitialized(_this), "onSlideFocus", function () {
       return _this.props.autoplay && _this.pause("focused");
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onSlideBlur", function () {
+    _defineProperty(_assertThisInitialized(_this), "onSlideBlur", function () {
       return _this.props.autoplay && _this.state.autoplaying === "focused" && _this.autoPlay("blur");
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "render", function () {
+    _defineProperty(_assertThisInitialized(_this), "render", function () {
       var className = classnames__WEBPACK_IMPORTED_MODULE_4___default()("slick-slider", _this.props.className, {
         "slick-vertical": _this.props.vertical,
         "slick-initialized": true
